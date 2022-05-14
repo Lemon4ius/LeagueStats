@@ -1,16 +1,21 @@
 [
-    {
+  {
     "title": "Azir",
     "description": "awd",
     "picturesDir": "assets/img/azir",
-    "skill":  [{
-        "title": "/skill.png"  ,    
+    "health": 0,
+    "protecton": 0,
+    "damage": 0,
+    "criticalDamage": 0,
+    "mana": 0,
+    "maxItems": 6,
+    "skill": [
+      {
+        "title": "/skill.png",
         "description": "awd",
         "picturesName": "awda",
         "gifName": ""
-      }]
-
-    
-    }
-
+      }
+    ]
+  }
 ]
