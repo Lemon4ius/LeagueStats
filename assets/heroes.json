@@ -1,0 +1,16 @@
+[
+    {
+    "title": "Azir",
+    "description": "awd",
+    "picturesDir": "assets/img/azir",
+    "skill":  [{
+        "title": "/skill.png"  ,    
+        "description": "awd",
+        "picturesName": "awda",
+        "gifName": ""
+      }]
+
+    
+    }
+
+]
