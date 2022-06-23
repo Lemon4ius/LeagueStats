@@ -7,55 +7,25 @@ namespace LegueStats {
 
 	using namespace System;
 
-	struct Skill {
-		std::string title;
-		std::string description;
-		std::string pictureName;
-		std::string gifName;
-
-		String^ getTitle() {
-			return toString(title);
-		}
-
-		String^ getDescription() {
-			return toString(description);
-		}
-
-		String^ getPictureName() {
-			return toString(pictureName);
-		}
-
-		String^ getGifName() {
-			return toString(gifName);
-		}
-
-	private: String^ toString(std::string str) {
-		return gcnew String(str.data());
-	}
+	ref struct Skill {
+		String^ title;
+		String^ description;
+		String^ pictureName;
+		String^ videoUrl;
 	};
 
-	struct Hero {
-		std::string title;
-		std::string description;
-		std::string picturesDir;
-		std::vector<Skill> skills;
+	ref struct Hero {
+		String^ title;
+		String^ description;
 
-		String^ getTitle() {
-			return toString(title);
-		}
+		int health;
+		int armor;
+		int damage;
+		int criticalDamage;
+		int mana;
+		int speed;
+		int maxItems;
 
-		String^ getDescription() {
-			return toString(description);
-		}
-
-		String^ getPicuresDir() {
-			return toString(picturesDir);
-		}
-
-	private: String^ toString(std::string str) {
-		return gcnew String(str.data());
-	}
+		Collections::Generic::List<Skill^>^ skills;
 	};
-
-	std::vector<Hero> heroes;
 }

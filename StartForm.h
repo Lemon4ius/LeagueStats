@@ -1,5 +1,9 @@
 #pragma once
+#include "Spravka.h"
 #include "Selector.h"
+#include "Hero.h"
+#include "HeroInfoForm.h"
+
 
 namespace LegueStats {
 
@@ -9,6 +13,7 @@ namespace LegueStats {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Net;
 
 	/// <summary>
 	/// Сводка для StartForm
@@ -16,8 +21,10 @@ namespace LegueStats {
 	public ref class StartForm : public System::Windows::Forms::Form
 	{
 	public:
-		StartForm(void)
+		StartForm(System::Collections::Generic::List<Hero^>^ heroes, System::Collections::Generic::List<Item^>^ items)
 		{
+			this->heroes = heroes;
+			this->items = items;
 			InitializeComponent();
 			//
 			//TODO: добавьте код конструктора
@@ -36,10 +43,12 @@ namespace LegueStats {
 			}
 		}
 	private: System::Windows::Forms::Button^ stratBtn;
-	private: System::Windows::Forms::Button^ calculator;
+
 	private: System::Windows::Forms::Button^ reference;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::Label^ label1;
+
+
+
+
 
 	protected:
 
@@ -50,6 +59,8 @@ namespace LegueStats {
 		/// Обязательная переменная конструктора.
 		/// </summary>
 		System::ComponentModel::Container ^components;
+		System::Collections::Generic::List<Hero^>^ heroes;
+		System::Collections::Generic::List<Item^>^ items;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -59,97 +70,62 @@ namespace LegueStats {
 		void InitializeComponent(void)
 		{
 			this->stratBtn = (gcnew System::Windows::Forms::Button());
-			this->calculator = (gcnew System::Windows::Forms::Button());
 			this->reference = (gcnew System::Windows::Forms::Button());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// stratBtn
 			// 
-			this->stratBtn->Location = System::Drawing::Point(104, 218);
+			this->stratBtn->Location = System::Drawing::Point(167, 75);
 			this->stratBtn->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->stratBtn->Name = L"stratBtn";
-			this->stratBtn->Size = System::Drawing::Size(75, 23);
+			this->stratBtn->Size = System::Drawing::Size(201, 56);
 			this->stratBtn->TabIndex = 0;
 			this->stratBtn->Text = L"Start";
 			this->stratBtn->UseVisualStyleBackColor = true;
 			this->stratBtn->Click += gcnew System::EventHandler(this, &StartForm::stratBtn_Click);
 			// 
-			// calculator
-			// 
-			this->calculator->Location = System::Drawing::Point(65, 57);
-			this->calculator->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->calculator->Name = L"calculator";
-			this->calculator->Size = System::Drawing::Size(155, 47);
-			this->calculator->TabIndex = 1;
-			this->calculator->Text = L"Калькулятор ";
-			this->calculator->UseVisualStyleBackColor = true;
-			this->calculator->Click += gcnew System::EventHandler(this, &StartForm::button1_Click);
-			// 
 			// reference
 			// 
-			this->reference->Location = System::Drawing::Point(65, 126);
+			this->reference->Location = System::Drawing::Point(167, 190);
 			this->reference->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->reference->Name = L"reference";
-			this->reference->Size = System::Drawing::Size(155, 48);
+			this->reference->Size = System::Drawing::Size(201, 56);
 			this->reference->TabIndex = 2;
 			this->reference->Text = L"Справка";
 			this->reference->UseVisualStyleBackColor = true;
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"awad", L"awd" });
-			this->comboBox1->Location = System::Drawing::Point(0, 0);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 24);
-			this->comboBox1->TabIndex = 3;
-			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &StartForm::comboBox1_SelectedIndexChanged);
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(189, 7);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(44, 16);
-			this->label1->TabIndex = 4;
-			this->label1->Text = L"label1";
-			this->label1->Click += gcnew System::EventHandler(this, &StartForm::label1_Click);
+			this->reference->Click += gcnew System::EventHandler(this, &StartForm::reference_Click);
 			// 
 			// StartForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(303, 325);
-			this->Controls->Add(this->label1);
-			this->Controls->Add(this->comboBox1);
+			this->BackColor = System::Drawing::Color::RosyBrown;
+			this->ClientSize = System::Drawing::Size(529, 325);
 			this->Controls->Add(this->reference);
-			this->Controls->Add(this->calculator);
 			this->Controls->Add(this->stratBtn);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->MaximizeBox = false;
 			this->Name = L"StartForm";
 			this->Text = L"StartForm";
+			this->Load += gcnew System::EventHandler(this, &StartForm::StartForm_Load);
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void stratBtn_Click(System::Object^ sender, System::EventArgs^ e) {
-		Selector().ShowDialog();
+		Selector(heroes, items).ShowDialog();
+	}	
+	private: System::Void player_PlayStateChange(System::Object^ sender, AxWMPLib::_WMPOCXEvents_PlayStateChangeEvent^ e) {
+		this->reference->Text = Convert::ToString(e->newState);
 	}
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		
+	private: System::Void StartForm_Load(System::Object^ sender, System::EventArgs^ e) {
+	
 	}
-	private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
-		if (comboBox1->SelectedIndex == 0) {
-			int b=100;
-			label1->Text = b.ToString();
+private: System::Void reference_Click(System::Object^ sender, System::EventArgs^ e) {
+	Me h;
+	h.ShowDialog();
 
-
-		}
-	}
-private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

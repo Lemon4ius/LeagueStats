@@ -1,0 +1,312 @@
+[
+    {
+        "title": "Abyssal Mask",
+        "description": "",
+        "pictureName": "abyssal-mask-64x.png",
+        "health": 450,
+        "armor": 0,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Aegis of the Legion",
+        "description": "sdndvlhrvsv83rvltkuhlfyrfhyeuretderufughtregurfe",
+        "pictureName": "aegis-of-the-legion-64x.png",
+        "health": 0,
+        "armor": 30,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0  
+    },
+    {
+        "title": "Aether Wisp",
+        "description": "UNIQUE Passive: +5% movement speed",
+        "pictureName": "aether-wisp-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 30,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Amplifying Tome",
+        "description": "sdndvlhrvsv83rvltkuhlfyrfhyeuretderufughtregurfe",
+        "pictureName": "amplifying-tome-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 20,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Anathema's Chains",
+        "description": "UNIQUE Passive: Take 1% reduced damage per stack of Vendetta from your Nemesis, up to 30% reduced damage.",
+        "pictureName": "anathemas-chains-64x.png",
+        "health": 650,
+        "armor": 0,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 20
+    },
+    {
+        "title": "Archangel's Staff",
+        "description": "UNIQUE Passive: Grants ability haste equal to 0.5% bonus mana.",
+        "pictureName": "archangels-staff-64x.png",
+        "health": 200,
+        "armor": 0,
+        "damage": 60,
+        "criticalDamage": 0,
+        "mana": 500,
+        "speed": 0
+    },
+    {
+        "title": "Ardent Censer",
+        "description": "",
+        "pictureName": "ardent-censer-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 60,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Axiom Arc",
+        "description": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 20% of your ultimate ability's maximum cooldown.",
+        "pictureName": "axiom-arc-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 55,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 25
+    },
+    {
+        "title": "Bami's Cinder",
+        "description": " Taking or dealing damage activates this passive for 3 seconds.",
+        "pictureName": "bamis-cinder-64x.png",
+        "health": 300,
+        "armor": 0,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Bandleglass Mirror",
+        "description": "",
+        "pictureName": "bandleglass-mirror-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 20,
+        "criticalDamage": 0,
+        "mana": 500,
+        "speed": 0
+    },
+    {
+        "title": "Banshee's Veil",
+        "description": "Grants a spell shield that blocks the next ability. This shield refreshes after no damage is taken from enemy champions for 40 seconds.",
+        "pictureName": "banshees-veil-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 80,
+        "criticalDamage": 0,
+        "mana": 45,
+        "speed": 0
+    },
+    {
+        "title": "Berserker's Greaves",
+        "description": "",
+        "pictureName": "berserkers-greaves-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 45
+    },
+    {
+        "title": "B. F. Sword",
+        "description": "",
+        "pictureName": "b-f-sword-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 40,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Black Cleaver",
+        "description": "UNIQUE Passive: Dealing physical damage to an enemy champion grants 3 bonus movement speed per stack of Carve on them for 2 seconds, up to 18.",
+        "pictureName": "black-cleaver-64x.png",
+        "health": 450,
+        "armor": 0,
+        "damage": 40,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Black Mist Scythe",
+        "description": "UNIQUE Passive: Receives diminishing gold from excessive minion kills.",
+        "pictureName": "black-mist-scythe-64x.png",
+        "health": 75,
+        "armor": 0,
+        "damage": 20,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+  
+    {
+        "title": "Blasting Wand",
+        "description": "",
+        "pictureName": "blasting-wand-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 40,
+        "criticalDamage": 0,
+        "mana": 10,
+        "speed": 0
+    },
+    {
+        "title": "Blighting Jewel",
+        "description": "",
+        "pictureName": "blighting-jewel-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 25,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Bloodthirster",
+        "description": "",
+        "pictureName": "bloodthirster-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 55,
+        "criticalDamage": 20,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Bloodward ",
+        "description": "Mythic Passive: Empowers each of your other Legendary items with 5 bonus attack damage and 70 bonus health.",
+        "pictureName": "bloodward-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 65,
+        "criticalDamage": 20,
+        "mana": 0,
+        "speed": 30
+    },
+    {
+        "title": "Boots",
+        "description": "",
+        "pictureName": "boots-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 25
+    },
+    {
+        "title": "Boots of Swiftness",
+        "description": "UNIQUE Passive: Reduces the effectiveness of slows by 25%.",
+        "pictureName": "boots-of-swiftness-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 60
+    },
+    {
+        "title": "Bramble Vest",
+        "description": "",
+        "pictureName": "bramble-vest-64x.png",
+        "health": 0,
+        "armor": 30,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Bulwark of the Mountain",
+        "description": "UNIQUE Passive: Receives diminishing gold from excessive minion kills.",
+        "pictureName": "bulwark-of-the-mountain-64x.png",
+        "health": 250,
+        "armor": 0,
+        "damage": 20,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Caesura",
+        "description": "UNIQUE Passive: While Safeguarded, gain 10, 40 ability power (depending on level), lingering for 3 seconds after Safeguard is deactivated.",
+        "pictureName": "caesura-64x.png",
+        "health": 350,
+        "armor": 0,
+        "damage": 90,
+        "criticalDamage": 0,
+        "mana": 800,
+        "speed": 0
+    },
+    {
+        "title": "Caulfield's Warhammer",
+        "description": "",
+        "pictureName": "caulfields-warhammer-64x.png",
+        "health": 0,
+        "armor": 0,
+        "damage": 25,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Ceaseless Hunger",
+        "description": "Mythic Passive: Empowers each of your other Legendary items with 7 ability haste.",
+        "pictureName": "ceaseless-hunger-64x.png",
+        
+        "health": 600,
+        "armor": 0,
+        "damage": 60,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Chain Vest",
+        "description": "",
+        "pictureName": "chain-vest-64x.png",
+        "health": 0,
+        "armor": 40,
+        "damage": 0,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    },
+    {
+        "title": "Chempunk Chainsword",
+        "description": "",
+        "pictureName": "chempunk-chainsword-64x.png",
+        "health": 250,
+        "armor": 0,
+        "damage": 55,
+        "criticalDamage": 0,
+        "mana": 0,
+        "speed": 0
+    }
+]

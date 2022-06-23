@@ -111,6 +111,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -126,7 +129,11 @@
     <ClInclude Include="HeroInfoForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Item.h" />
     <ClInclude Include="json.hpp" />
+    <ClInclude Include="Spravka.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Selector.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -138,12 +145,35 @@
     <EmbeddedResource Include="HeroInfoForm.resx">
       <DependentUpon>HeroInfoForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Spravka.resx">
+      <DependentUpon>Spravka.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Selector.resx">
       <DependentUpon>Selector.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib.1.0">
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxWMPLib.1.0">
+      <WrapperTool>aximp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
